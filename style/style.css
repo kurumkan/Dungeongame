@@ -1,0 +1,126 @@
+body{
+	background: #000;
+	font-size: 12px;
+	color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    padding-top:5%; 
+}
+#container{
+	width: 300px; 
+	height: 300px; 	
+	margin:0 auto;
+	overflow: hidden;
+	border-radius: 15px;
+	border:1px black solid;
+
+}
+#info{
+	width: 300px;
+	margin:20px auto;
+}
+#info>div{
+	width: 150px;	
+	display: inline-block;
+}
+#hpcontainer{
+	position:relative;
+	width: 120px;
+	height: 14px;
+	border:1px solid white;
+}
+#hpbar{		
+	/*width: 40%;*/
+	height: 100%;
+	position: absolute;
+	background: green;	
+	-webkit-transition: width 1s; 
+    transition: width 1s;
+}
+
+.hidden{
+	display: none;
+}
+#dialog{
+	text-align: center;
+	font-size: 20px;
+	width: 310px;
+	height: 350px;
+	background: black;	
+	position: absolute; 
+	padding-top: 5%;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+}
+
+.section{ 
+	margin:0 auto;	
+	border: 10px solid #FFF; 
+	background: #000; 
+	position: relative; 
+}
+.section_content{ 
+	display: block; 	 
+	overflow: hidden; 
+}
+.corner{ 
+	width: 15px; 
+	position: absolute; 
+	z-index: 9; 
+}
+.tl{ 
+	top: -10px; 
+	left: -10px; 
+}
+.tr{ 
+	top: -10px; 
+	right: -10px; 
+}
+.bl{ 
+	bottom: -10px; 
+	left: -10px; 
+}
+.br{ 
+	bottom: -10px; 
+	right: -10px; 
+}
+.corner .a{ 
+	width: 5px; 
+	height: 10px; 
+	float: left; 
+	display: block; 
+	background: #000; 
+}
+.corner .b{ 
+	width: 5px; 
+	height: 5px; 
+	float: left; 
+	display: block; 
+	background: #000; 
+}
+.corner .c{ 
+	width: 10px; 
+	height: 10px; 
+	float: left; 
+	display: block; 
+	background: #FFF; 
+}
+.tr .a, .tr .b, 
+.tr .c, .br .a, 
+.br .b, .br .c{ 
+	float: right; 
+}
+.bl .a, 
+.br .a{ 
+	border-top: 5px solid #FFF; 
+}
+.btn{
+	font-size: 14px;
+	background: white;
+	color:black;
+	width: 200px;
+	margin: 15px auto;	
+	padding: 5px 0;
+	cursor: pointer;
+}
