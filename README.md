@@ -1,3 +1,3 @@
 #React-redux Dungeon Crawler game.
 
-the Demo will be available soon!
+See  <a href="http://codepen.io/pbweb/full/zKEAWN/">the Demo</a>

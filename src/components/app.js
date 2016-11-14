@@ -41,25 +41,25 @@ var App  =  React.createClass({
         }   
         //array of images
         var images = {
-            "hero-right": createImage("../../images/hero-right.png"),
-            "hero-left": createImage("../../images/hero-left.png"),
-            "treasure": createImage("../../images/treasure.png"),
-            "boss": createImage("../../images/boss.png"),
-            "key": createImage("../../images/key.png"),
-            "monster1": createImage("../../images/monster1.png"),
-            "monster2": createImage("../../images/monster2.png"),
-            "monster3": createImage("../../images/monster3.png"),
-            "axe": createImage("../../images/axe.png"),
-            "mace": createImage("../../images/mace.png"),
-            "poison": createImage("../../images/poison.png"),
-            "sword": createImage("../../images/sword.png"),
-            "medicine": createImage("../../images/medicine.png"),
-            "axeleft": createImage("../../images/axeleft.png"),
-            "axeright": createImage("../../images/axeright.png"),
-            "maceleft": createImage("../../images/maceleft.png"),
-            "maceright": createImage("../../images/maceright.png"),
-            "swordleft": createImage("../../images/swordleft.png"),
-            "swordright": createImage("../../images/swordright.png")
+            "hero-right": createImage("http://res.cloudinary.com/dzjiv8sye/image/upload/v1475295576/hero-right.png"),
+            "hero-left": createImage("http://res.cloudinary.com/dzjiv8sye/image/upload/v1475295576/hero-left.png"),
+            "treasure": createImage("http://res.cloudinary.com/dzjiv8sye/image/upload/v1475295576/treasure.png"),
+            "boss": createImage("http://res.cloudinary.com/dzjiv8sye/image/upload/v1475295576/boss.png"),
+            "key": createImage("http://res.cloudinary.com/dzjiv8sye/image/upload/v1475295576/key.png"),
+            "monster1": createImage("http://res.cloudinary.com/dzjiv8sye/image/upload/v1475295576/monster1.png"),
+            "monster2": createImage("http://res.cloudinary.com/dzjiv8sye/image/upload/v1475295576/monster2.png"),
+            "monster3": createImage("http://res.cloudinary.com/dzjiv8sye/image/upload/v1475295576/monster3.png"),
+            "axe": createImage("http://res.cloudinary.com/dzjiv8sye/image/upload/v1475295576/axe.png"),
+            "mace": createImage("http://res.cloudinary.com/dzjiv8sye/image/upload/v1475295576/mace.png"),
+            "poison": createImage("http://res.cloudinary.com/dzjiv8sye/image/upload/v1475295576/poison.png"),
+            "sword": createImage("http://res.cloudinary.com/dzjiv8sye/image/upload/v1475295576/sword.png"),
+            "medicine": createImage("http://res.cloudinary.com/dzjiv8sye/image/upload/v1475295576/medicine.png"),
+            "axeleft": createImage("http://res.cloudinary.com/dzjiv8sye/image/upload/v1475295576/axeleft.png"),
+            "axeright": createImage("http://res.cloudinary.com/dzjiv8sye/image/upload/v1475295576/axeright.png"),
+            "maceleft": createImage("http://res.cloudinary.com/dzjiv8sye/image/upload/v1475295576/maceleft.png"),
+            "maceright": createImage("http://res.cloudinary.com/dzjiv8sye/image/upload/v1475295576/maceright.png"),
+            "swordleft": createImage("http://res.cloudinary.com/dzjiv8sye/image/upload/v1475295576/swordleft.png"),
+            "swordright": createImage("http://res.cloudinary.com/dzjiv8sye/image/upload/v1475295576/swordright.png")
         };                
         var imageCount = Object.keys(images).length;        
         var imagesLoaded = 0;
@@ -185,7 +185,7 @@ var App  =  React.createClass({
         //place the treasures
         var treasures = this. state.treasures;
         for(var i=0; i<2; i++){
-            var coords = this.findHiddenCell(2);
+            var coords = this.findHiddenCell(1);
             var item = {
                 x: coords.x,
                 y: coords.y,
@@ -343,7 +343,7 @@ var App  =  React.createClass({
         //removing unaccessible parts
         board = this.fixBoard(board);                
         var img = new Image();
-        img.src = '../../images/wall.png';
+        img.src = 'http://res.cloudinary.com/dzjiv8sye/image/upload/v1475295576/wall.png';
         //draw the game board
         img.onload=function(){
             for(var x=0; x<50; x++){                       
